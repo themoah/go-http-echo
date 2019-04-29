@@ -31,6 +31,13 @@ func EchoHandler(writer http.ResponseWriter, request *http.Request) {
 	request.Write(writer)
 }
 
+// // RandomHandler responses with random int (prevent caching for tests)
+// func RandomHandler(writer http.ResponseWriter, request *http.Request) {
+// 	log.Println("Echoing back request made to " + request.URL.Path + " to client (" + request.RemoteAddr + ")")
+// 	i := rand.Float64()
+// 	request.Write(i)
+// }
+
 func main() {
 
 	log.Println("starting server, listening on port " + getServerPort())
