@@ -1,0 +1,16 @@
+---
+    apiVersion: extensions/v1beta1
+    kind: Ingress
+    metadata:
+      name: web2port-ingress
+      annotations:
+        nginx.ingress.kubernetes.io/rewrite-target: /
+    spec:
+     rules:
+     - host: hello-world.info
+       http:
+         paths:
+         - path: /*
+           backend:
+             serviceName: web2
+             servicePort: 8080
