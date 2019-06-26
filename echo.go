@@ -43,5 +43,5 @@ func main() {
 	log.Println("starting server, listening on port " + getServerPort())
 
 	http.HandleFunc("/", EchoHandler)
-	http.ListenAndServe(":"+getServerPort(), nil)
+	http.ListenAndServe("0.0.0.0:"+getServerPort(), nil)
 }
