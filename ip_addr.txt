@@ -1,0 +1,5 @@
+arin.net -> 8.8.8.9 or 13.244.0.5
+ripe.net -> 5.135.38.144
+apnic.net -> 1.33.213.226
+lacnic.net -> 45.180.248.7
+afrinic.net -> 41.84.0.99

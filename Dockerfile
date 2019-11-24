@@ -3,7 +3,7 @@ RUN mkdir /build
 ADD . /build/
 WORKDIR /build 
 RUN go build -o main .
-FROM alpine:3.9
+FROM alpine:3.10
 LABEL maintainer="@themoah" 
 LABEL version="0.1"
 LABEL description="A simple HTTP echo server"

@@ -9,7 +9,7 @@ A simple golang HTTP server to echo requests
     go run echo.go
 
 This will start the HTTP server running on localhost, port 8080. 
-To run on a different port, set the `SERVER_PORT` environment variable before running.
+To run on a different port, set the `PORT` environment variable before running.
 
 Once running, you can make requests from a browser (or any HTTP client) via `http://localhost:8080/`
 
